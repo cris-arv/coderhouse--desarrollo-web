@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="estilos/estilos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mundo Aviones</title>
+  </head>
+  <body class="body">
+
+    <p class="texto-introductorio-1">Si te gustan los aviones...</p>
+    <p class="texto-introductorio-2">Mundo aviones es tu web</p>
+
+    <header class="header">
+      <img src="imagenes/logo/logo.png" alt="Silueta de avion con fondo de mundo" title="Logo" class="header__imagen-logo">
+      <img src="imagenes/portada/portada.jpg" alt="Avión volando entre nubes" title="Portada" class="header__imagen-portada">
+      <h1 class="header__h1">Mundo aviones</h1>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarNavDropdown">
+        <ul class="navbar-nav col-xl-12">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Inicio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#ultimoArticulo">Último artículo</a>
+              <a class="dropdown-item" href="#ultimoArticuloNoticia">Último artículo noticia</a>
+              <a class="dropdown-item" href="#ultimoArticuloAvion">Último artículo avion</a>
+              <a class="dropdown-item" href="#ultimoArticuloEntrevista">Último artículo entrevista</a>
+              <a class="dropdown-item" href="#ultimoArticuloVuelo">Último artículo exhibición de vuelo</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/aviones.html">Aviones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/entrevistas.html">Entrevistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/exhibiciones_de_vuelo.html">Exhibiciones de vuelo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/quienes_somos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="bd-example carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block w-100 carousel-multimedia" src="imagenes/noticias/avion_supersonico.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-h3">First slide label</h3>
+              <p class="carousel-p">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 carousel-multimedia" src="imagenes/aviones/doble_turbina.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-h3">Second slide label</h3>
+              <p class="carousel-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <iframe class="d-block w-100 carousel-multimedia" src="https://www.youtube.com/embed/_VDN5UE_IxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Third slide">
+              Tu navegador no implementa el elemento video.
+            </iframe>
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-h3">Thirdh slide label</h3>
+              <p class="carousel-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video class="d-block carousel-multimedia" src="videos/vuelo_acrobatico.mp4" alt="Second slide" controls>
+              Tu navegador no implementa el elemento video.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="carousel-h3">Fourth slide label</h3>
+              <p class="carousel-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid">        
+      <aside class="row justify-content-center aside-inicio">
+        <section class="col-md-6 col-lg-6 col-xl-3 section">
+          <div class="section__contenedor-multimedia">
+            <a href="imagenes/noticias/avion_supersonico.jpg"><img src="imagenes/noticias/avion_supersonico.jpg" alt="Avión supersónico" title="Avión supersónico" class="section__multimedia" id="ultimoArticuloNoticia"></a>
+          </div>
+          <h2 class="section__h2">TÍTULO DEL ÚLTIMO ARTÍCULO DE NOTICIA</h2>
+          <p class="section__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quos aut tenetur dolores eligendi! Temporibus placeat totam reprehenderit tenetur tempore, dignissimos exercitationem laudantium, omnis ea officia perspiciatis sed ullam ratione provident nulla, atque aspernatur? Inventore sunt tempore, at obcaecati aspernatur ullam, omnis unde illum, cumque temporibus eaque quae maxime dolore facilis in quis! Architecto sequi nihil excepturi, dignissimos deserunt, atque amet nostrum illum modi labore error fuga cum laboriosam explicabo. Earum, sunt, iure, alias placeat quibusdam voluptas neque in incidunt dolorum ipsa totam? Quae eius soluta provident accusamus maiores autem nisi repudiandae accusantium. Repellendus in id, architecto voluptatem similique illum.
+          </p>                
+        </section>
+        <section class="col-md-6 col-lg-6 col-xl-3 section">
+          <div class="section__contenedor-multimedia">
+            <a href="imagenes/aviones/doble_turbina.jpg"><img src="imagenes/aviones/doble_turbina.jpg" alt="Avión ligero privado de doble turbina" title="Avión ligero privado de doble turbina" class="section__multimedia" id="ultimoArticuloAvion"></a>
+          </div>
+          <h2 class="section__h2">TÍTULO DEL ÚLTIMO ARTÍCULO DE AVIÓN</h2>
+          <p class="section__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quos aut tenetur dolores eligendi! Temporibus placeat totam reprehenderit tenetur tempore, dignissimos exercitationem laudantium, omnis ea officia perspiciatis sed ullam ratione provident nulla, atque aspernatur? Inventore sunt tempore, at obcaecati aspernatur ullam, omnis unde illum, cumque temporibus eaque quae maxime dolore facilis in quis! Architecto sequi nihil excepturi, dignissimos deserunt, atque amet nostrum illum modi labore error fuga cum laboriosam explicabo. Earum, sunt, iure, alias placeat quibusdam voluptas neque in incidunt dolorum ipsa totam? Quae eius soluta provident accusamus maiores autem nisi repudiandae accusantium. Repellendus in id, architecto voluptatem similique illum.
+          </p>                
+        </section>  
+        <section class="col-md-6 col-lg-6 col-xl-3 section">
+          <div class="section__contenedor-multimedia">
+            <a href="imagenes/entrevistas/plataforma_estacionamiento.jpg"><img src="imagenes/entrevistas/plataforma_estacionamiento.jpg" alt="Hombre al frente de una plataforma de estacionamiento de aviones ligeros" title="Hombre al frente de una plataforma de estacionamiento de aviones ligeros" class="section__multimedia" id="ultimoArticuloEntrevista"></a>
+          </div>
+          <h2 class="section__h2">TÍTULO DEL ÚLTIMO ARTÍCULO DE ENTREVISTA</h2>
+          <p class="section__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quos aut tenetur dolores eligendi! Temporibus placeat totam reprehenderit tenetur tempore, dignissimos exercitationem laudantium, omnis ea officia perspiciatis sed ullam ratione provident nulla, atque aspernatur? Inventore sunt tempore, at obcaecati aspernatur ullam, omnis unde illum, cumque temporibus eaque quae maxime dolore facilis in quis! Architecto sequi nihil excepturi, dignissimos deserunt, atque amet nostrum illum modi labore error fuga cum laboriosam explicabo. Earum, sunt, iure, alias placeat quibusdam voluptas neque in incidunt dolorum ipsa totam? Quae eius soluta provident accusamus maiores autem nisi repudiandae accusantium. Repellendus in id, architecto voluptatem similique illum.
+          </p>                
+        </section>
+        <section class="col-md-6 col-lg-6 col-xl-3 section">
+          <div class="section__contenedor-multimedia">
+            <video src="videos/vuelo_acrobatico.mp4" controls class="section__multimedia" id="ultimoArticuloVuelo">
+              Tu navegador no implementa el elemento video.
+            </video>
+          </div>
+          <h2 class="section__h2">TÍTULO DEL ÚLTIMO ARTÍCULO DE EXHIBICIONES DE VUELO</h2>
+          <p class="section__p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quos aut tenetur dolores eligendi! Temporibus placeat totam reprehenderit tenetur tempore, dignissimos exercitationem laudantium, omnis ea officia perspiciatis sed ullam ratione provident nulla, atque aspernatur? Inventore sunt tempore, at obcaecati aspernatur ullam, omnis unde illum, cumque temporibus eaque quae maxime dolore facilis in quis! Architecto sequi nihil excepturi, dignissimos deserunt, atque amet nostrum illum modi labore error fuga cum laboriosam explicabo. Earum, sunt, iure, alias placeat quibusdam voluptas neque in incidunt dolorum ipsa totam? Quae eius soluta provident accusamus maiores autem nisi repudiandae accusantium. Repellendus in id, architecto voluptatem similique illum.
+          </p>
+        </section>
+      </aside>
+    </div>
+
+
+    <footer class="footer">
+      <div class="footer__contener-elementos">
+        <p class="footer__p">
+          Contacto: XX-XXX-XXXX
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>          
+  </body>
+</html>
