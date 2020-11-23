@@ -1,0 +1,360 @@
+@import "_fonts.scss";
+@import "_colors";
+@import "_extends";
+
+
+
+// --------------------------------- Fuentes --------------------------------
+
+@font-face {
+  font-family: $font-family-footer;
+  src: url(../fuentes/Roboto/Roboto-BoldItalic.ttf);
+}
+
+.header__h1, .section__h2, .navbar-nav {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section_inicio__p {
+  font-family: $font-family-paragraph;  
+}
+
+.footer__contacto {
+  font-family: $font-family-footer;
+}
+
+
+
+// --------------------------------- Colores --------------------------------
+
+.nav-link:link, .dropdown-item:link {
+  color: $link-color;
+}
+
+.nav-link:visited, .dropdown-item:visited {
+  color: $link-visited-color;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+  color: $link-hover-color;
+}
+
+.texto-introductorio, .nav-link:active, .dropdown-item:active {
+  color: $link-active-color;
+}
+
+.header__h1 {
+  color: $headings-color;
+}
+
+.section:hover {
+  .section__h2, .section__p {
+    color: $paragraph-color;
+  }
+}
+
+.section__h2, .section__p {
+  color: $fuzzy-color;
+}
+
+.body, .dropdown-menu, .navbar-collapse {
+  background-color: $background-color;
+}
+
+.nav-item, .dropdown-item, .navbar-toggler {
+  background: $background-linear-gradient-color;
+}
+
+.footer__contener-elementos {
+  border: 1px solid $border-color;
+}
+
+.footer__texto, .section__h2--principal, .section__p--principal {
+  color: $paragraph-color;
+}
+
+
+
+// -------------------------- Propiedades generales -------------------------
+
+.header__h1, .section__h2 {
+  @extend %font-weight-text-align;
+}
+
+.header__imagen-portada, .section__multimedia, .carousel-multimedia{
+  object-fit: cover;
+  width: 100%;
+}
+
+.texto-introductorio {
+  position: absolute;
+  opacity: 0%;
+}
+
+.header__h1, .carousel-h3, .carousel-p, .section__p, .section__h2, .navbar-nav {
+  font-style: italic;
+}
+
+.seccion-estructural {
+  margin-bottom: 40px;
+}
+ 
+header, nav, .seccionPrincipal, aside, footer, .carousel {
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+// ------------------------ Propiedades por secciones -----------------------
+
+// -------------------------------- Cabecera --------------------------------
+
+.header__imagen-logo{
+  position: absolute;
+  width: 10%;
+  margin: 2px;
+}
+
+.header__h1 {
+  text-transform: uppercase;
+  font-size: calc(1rem + 4vw);
+  word-spacing: calc(0.5rem + 0.3vw);
+}
+
+
+
+// --------------------------- Barra de navegación --------------------------
+
+.navbar-nav {
+  text-transform: uppercase;
+  font-size: calc(0.9rem + 0.5vw);
+  font-weight: bold;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.nav-item {
+  flex-grow: 1;
+  padding: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.dropdown-item {
+  font-size: calc(0.65rem + 0.6vw);
+  font-weight: bold;
+}
+
+
+// ---------------------------- Sección principal ---------------------------
+
+.carousel {
+  margin-bottom: 50px;
+}
+
+.carousel-h3 {
+  font-size: calc(0.9rem + 0.9vw);
+}
+
+.carousel-p {
+  font-size: calc(0.8rem + 0.2vw);
+}
+
+.carousel-multimedia {
+  height: 200px;
+}
+
+
+// ---------------------------------- Aside ---------------------------------
+
+.aside-inicio {
+  margin-bottom: 30px;
+}
+
+.section {
+  overflow: hidden;
+  height: calc(35rem + 8vw);
+  padding: 0rem calc(0.3rem + 0.5vw);
+  margin-bottom: 30px;
+}
+
+.section__contenedor-multimedia {
+  overflow: hidden;
+}
+
+.section__multimedia {
+  opacity: 0.66;
+}
+
+.section__h2 {
+  font-size: calc(1rem + 1vw);
+}
+
+.section__p {
+  text-align: justify;
+  font-size: calc(0.8rem + 0.2vw);
+}
+
+.section__h2, .section__p{
+  opacity: 0.9;
+}
+
+.section__multimedia, .section__h2, .section__p {
+  transition: all 1s;
+}
+
+.section:hover {
+  .section__multimedia,
+  .section__multimedia--principal {
+    transform: scale(1.05);
+  }
+  .section__multimedia, .section__h2, .section__p {
+    opacity: 100%;
+  }
+}
+
+.section--principal {
+  height: inherit;
+}
+
+.section__multimedia--principal {
+  height: inherit;
+  opacity: inherit;
+}
+
+
+/* ------------------------------ Flecha arriba ----------------------------- */
+.flecha-arriba {
+  position: absolute;
+}
+
+.flecha-arriba__imagen {
+  width: calc(2.5rem + 0.5vw);
+  opacity: 0.4;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+// ------------------------------ Pie de página -----------------------------
+
+.footer {
+  padding: calc(0.15rem + 0.25vw);
+  margin-bottom: 15px;
+}
+
+.footer__contener-elementos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.footer__contacto {
+  font-size: calc(1.5rem + 0.2vw);
+}
+
+.footer__icono-youtube,
+.footer__icono-facebook,
+.footer__icono-twitter,
+.footer__icono-instagram,
+.footer__icono-pinterest,
+.footer__icono-email {
+  width: calc(3rem + 0.5vw);
+  margin: calc(0.5rem + 0.5vw);
+}
+
+
+
+// -------------------------------------------------------------------------- //
+//                                Medias query                                //
+// -------------------------------------------------------------------------- //
+
+
+// ------------------- ESTILOS PARA MÓVILES MEDIANOS (SM) ------------------- //
+
+@media only screen and (max-width: 575px) {
+  .principal {
+    order: -1;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .carousel-multimedia, .section__multimedia--exvu {
+    height: 300px;
+  }
+  .principal {
+    order: -1;
+  }
+}
+
+// ------------------- Estilos para móviles medianos (MD) ------------------- //
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section__multimedia {
+    height: 25vw;
+  }
+  .principal {
+    order: -1;
+  }
+  .section__multimedia--principal{
+    height: inherit;
+  }
+  .carousel-multimedia {
+    height: 400px;
+  }
+}
+
+
+// ------------------------ Estilos para tablets (LG) ----------------------- //
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .carousel-multimedia, .section__multimedia--exvu {
+    height: 500px;
+  }
+  .section__multimedia {
+    height: 25vw;
+  }
+  .principal {
+    order: -1;
+  }
+  .section__multimedia--principal {
+    height: 40vh;
+  }
+}
+
+
+// ---------------------- Estilos para escritorio (XL) ---------------------- //
+
+@media only screen and (min-width: 1200px) {
+  .section__multimedia {
+    height: 15vw;
+  }
+  .section__multimedia--principal {
+    height: 85vh;
+  }
+}
+
+
+// ---------------------------- Etilos landscape ---------------------------- //
+
+@media only screen and (orientation: LANDSCAPE) {
+  .section__multimedia--principal {
+    height: inherit;
+  }
+  .section__multimedia--exvu {
+    height: 40vh;
+  }
+  .carousel-multimedia {
+    height: 85vh;
+  }
+}
+
+@media only screen and (orientation: LANDSCAPE) and (max-width: 991px) {
+  .section__multimedia--principal {
+    height: inherit;
+  }
+  .carousel-multimedia, .section__multimedia--principal {
+    height: 85vh;
+  }
+}
